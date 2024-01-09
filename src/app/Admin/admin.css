@@ -1,0 +1,151 @@
+
+@font-face {
+    font-family: pop;
+    src: url(../assets/Poppins/Poppins-Regular.ttf);
+}
+
+*{
+    font-family: pop;
+    color: gainsboro;
+    outline: none;
+}
+.Fc{
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(./wallpaperflare.com_wallpaper.jpg) no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+
+}
+
+.Fc .form{
+    width: 90%;
+    max-width: 800px;
+    background: rgba(24, 24, 24, 0.911);
+    margin-top: 50px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 100px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 1500px;
+}
+
+.form .Horirow{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    min-height: 100px;
+}
+
+fieldset{
+    width: 40%;
+    border: none;
+    height: 50px;
+}
+
+legend{
+    font-size: 15px;
+}
+
+
+fieldset input[type="text"]{
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: #303030;
+    margin-top: 5px;
+}
+
+
+.Horirow select{
+    width: 100%;
+    height: 45px;
+    border: 1px solid rgb(39, 39, 39);
+    background:  #303030;
+    margin-top: 5px;
+}
+
+textarea{
+    width: 70%;
+    height: 100px;
+
+    border: 1px solid #303030;
+    background:  #303030;
+}
+
+.AddImage{
+    width: 100px;
+    height: 120px;
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    margin-left: 10px;
+    position: relative;
+}
+.selectedCheck{
+    width: 100px;
+    height: 120px;
+margin-left: 10px;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    position: relative;
+}
+
+.selectedCheck{
+    background: teal;
+}
+
+input[type="file"]{
+    display: flex;
+    flex: 1;
+    position: absolute;
+    height: 120px;
+    opacity: 0;
+    width: 100px;
+}
+
+.listView{
+    width: 80%;
+    height: 50px;
+    border: 1px solid #303030;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5px;
+    /* justify-content: center; */
+}
+
+.listView input,p{
+    background: none;
+    width: 80%;
+    height: 40px;
+    border: none;
+}
+
+.listView button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #303030;
+}
+button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: #303030;
+}
+

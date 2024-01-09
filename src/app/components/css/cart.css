@@ -1,0 +1,213 @@
+.empty_hero{
+    width: 100%;
+    height: 200px;
+    background: url(../illustrators/shopping-fun.png) center no-repeat;
+    background-size: contain;
+    margin-top: 100px;
+    /* background-color: red; */
+}
+
+
+
+.cartItmView{
+    width: 100%;
+    height: 150px;
+    /* background: white; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    margin-top: 5px;
+    position: relative;
+}
+
+.ImgPrev{
+    width: 100px;
+    height: 100px;
+    background: black;
+    background-size: cover;
+    border-radius: 5px;
+    background-size: cover !important;
+}
+
+.trash{
+    /* position: absolute; */
+    /* top: 5px; */
+    /* right: 0px; */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.trash:active{
+    opacity: 0.2;
+}
+
+.Counter{
+    /* position: absolute; */
+    /* top: 5px; */
+    /* right: 0px; */
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 100px;
+    position: absolute;
+    cursor: pointer;
+    background: black;
+    /* counter-increment: var(--count); */
+    transition: 0.5s;
+}
+
+.Counter:active{
+    opacity: 0.2;
+}
+
+.quant{
+    min-width: 50px;
+    max-width: fit-content;
+    height: 35px;
+    background: white;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+.DropdownC{
+    width: 50px;
+    min-height: fit-content;
+    background: white;
+    position: absolute;
+    /* right: 100px; */
+    top: 130px;
+    box-shadow: 0px 10px 10px 10px #80808016;
+    border-radius: 5px;
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.DropdownC .list{
+    width: 95%;
+    min-height: 40px;
+    /* border-radius: 5px; */
+    background: ghostwhite;
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.DropdownC .list:hover{
+    color: turquoise;
+    background: white;
+}
+
+.sibtn{
+    width: 80%;
+    height: 50px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-radius: 10px;
+    max-width: 350px;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+}
+
+.sibtn *{
+    margin: 20px;
+}
+
+#sibg{
+    background: url('../illustrators/woman-working-while-seating-on-park-bench.png') center no-repeat !important;
+    background-size: contain !important;
+}
+
+.cbtn{
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    background: #04b6b6;
+}
+
+
+
+
+
+
+
+
+
+
+/* intro animations */
+
+@keyframes signInTxt {
+    0%{
+        opacity: 0;
+        font-size: 50px;
+    }
+    
+    100%{
+        opacity: 1;
+        font-size: 15px;
+    }
+}
+
+@keyframes imageILL {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #Hdd{
+        display: none !important;
+    }
+    #NC{
+        font-size: 30px !important;
+    }
+}
+
+#NC{
+    display: -webkit-box; /* Set display to a flex container */
+  -webkit-line-clamp: 1; /* Number of lines to display */
+  -webkit-box-orient: vertical; /* Set flex direction to vertical */
+  overflow: hidden; /* Hide overflowing content */
+  /* word-wrap: break-word !important; */
+}
+
+.glogo{
+    width: 30px;
+    height: 30px;
+    background: url(../illustrators/google.png) center no-repeat;
+    background-size: contain;
+    border: none;
+}

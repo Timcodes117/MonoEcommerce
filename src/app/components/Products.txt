@@ -1,0 +1,66 @@
+ <div className='bc' style={{position: 'relative', display: 'flex', alignItems: 'center', width: '120%', overflow: 'hidden', marginLeft: -70}}>
+
+    <div className="pView">
+
+    {products.map((itm : any, id :any)=>{
+      
+
+        return( 
+          <>
+          {
+             current_category === 'ALL' ?
+            <div className='Product' key={itm.id}>
+          {/* <img src={itm.image} alt="" className='Pimg' /> */}
+          <div className="Pimg" style={{background: `url(${itm.image})`, backgroundSize: 'cover'}}></div>
+          <div className="pInfo">
+          <figcaption style={{fontSize: 20, marginLeft: 10, wordWrap: 'break-word', lineBreak: 'anywhere', width: '90%', fontWeight: 'bolder', color: 'whitesmoke'}}>{itm.name}</figcaption>
+          <p style={{fontSize: 15, marginLeft: 10, color: 'white'}}>${itm.Price}</p>
+          <br />
+             <div className="fav">
+            {/* <FontAwesomeIcon icon={faHeart} style={{width: 20, height: 20}}/> */}
+            <Heart style={{width: 20, height: 20, color: 'white'}}/>
+          </div>
+          </div>
+
+        </div>
+        : null
+        
+      }
+
+          {
+            itm.Category === current_category && current_category !== 'ALL' ?
+            <div className='Product' key={itm.id} id={itm.id}>
+          {/* <img src={itm.image} alt="" className='Pimg' /> */}
+          <div className="Pimg" style={{background: `url(${itm.image})`, backgroundSize: 'cover'}}></div>
+          <div className="pInfo">
+          <figcaption style={{fontSize: 20, marginLeft: 10, wordWrap: 'break-word', lineBreak: 'anywhere', width: '90%', fontWeight: 'bolder', color: 'whitesmoke'}}>{itm.name}</figcaption>
+          <p style={{fontSize: 15, marginLeft: 10, color: 'white'}}>${itm.Price}</p>
+          <br />
+          
+
+          <div className="fav">
+            {/* <FontAwesomeIcon icon={faHeart} style={{width: 20, height: 20}}/> */}
+            <Heart style={{width: 20, height: 20, color: 'white'}}/>
+          </div>
+          </div>
+
+        </div>
+        : null
+        
+      }
+         
+        </>
+      )
+    
+     
+    })
+  }
+  
+  </div>
+  <div className="prev" style={{left: 0}}>
+        <FontAwesomeIcon icon={faAngleLeft} style={{width: 20, height: 20}}  />
+      </div>
+      <div className="next">
+        <FontAwesomeIcon icon={faAngleRight} style={{width: 20, height: 20}} />
+      </div>
+    </div>

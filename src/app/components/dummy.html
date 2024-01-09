@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-section {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.content-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+    </style>
+</head>
+<body>
+    <script>
+       document.addEventListener('DOMContentLoaded', () => {
+  const mainSection = document.querySelector('.main-section');
+  const circle = document.querySelector('.circle');
+  const contentSection = document.querySelector('.content-section');
+
+  mainSection.addEventListener('mouseenter', () => {
+    circle.style.width = '200px';
+    circle.style.height = '200px';
+    contentSection.style.opacity = '1';
+  });
+
+  mainSection.addEventListener('mouseleave', () => {
+    circle.style.width = '0';
+    circle.style.height = '0';
+    contentSection.style.opacity = '0';
+  });
+});
+
+
+    </script>
+    <div class="main-section">
+        Hover over me!
+        <div class="circle"></div>
+        <div class="content-section">
+          Content within the circle
+        </div>
+      </div>
+      
+</body>
+</html>

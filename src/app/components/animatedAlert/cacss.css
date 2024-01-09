@@ -1,0 +1,74 @@
+
+
+
+
+.WindowArea{
+    /* opacity: 0; */
+    /* transition: all 2s; */
+    background: rgba(0, 0, 0, 0.452);
+    /* background: none; */
+}
+
+.dialogue{
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    background: white;
+    transform: translateY(-250px);
+    animation-name: dropGrow;
+    animation-delay: 0.5s;
+    animation-duration: 10s;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px !important;
+}
+/* .dialogue{
+    width: 80%;
+    height: 400px;
+    background: white;
+} */
+
+@keyframes windowarea {
+    0%{
+        background: rgba(0, 0, 0, 0);
+        
+    }
+    
+    10%{
+        /* opacity: 0.5; */
+       background: rgba(0, 0, 0, 0.452);
+       
+    }
+    100%{
+       background: rgba(0, 0, 0, 0);
+        /* opacity: 0; */
+        
+    }
+}
+
+
+
+@keyframes dropGrow {
+   0%{
+       transform: translateY(-250px);
+
+   }
+    
+    10%{
+        transform: translateY(150px);
+        /* transition: 5s; */
+        /* animation-duration: 5s !important; */
+        /* animation-play-state: paused !important; */
+        
+    }
+    
+    
+    100%{
+        transform: translateY(-550px);
+
+    }
+    
+}
